@@ -1,6 +1,8 @@
 let participants = [
   {
     id: 1,
+    user_admin: "daniel el admin",
+    user_password: "daniel123",
     participants: [
       {    
         id: 1,
