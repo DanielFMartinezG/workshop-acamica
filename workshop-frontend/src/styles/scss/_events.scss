@@ -1,0 +1,14 @@
+.events-section{
+  .hero-container{
+    .hero-container-title{
+      margin: 20px auto;
+      @include montserrant-font(20px,25px,700);
+      text-align: center;
+      .title-decoration{
+        display: block;
+        margin-left: 25px;
+        color: #f1919d;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.page-container{
+  margin: auto;
+  max-width: 375px;
+}
+
+// Función para font-montserrant
+@mixin montserrant-font($s,$h,$w) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $s;
+  line-height: $h;
+  font-weight: $w;
+  text-align: left;
+  letter-spacing: 0;
+}
+// Función para font-robot
+@mixin roboto-font($s,$h,$w) {
+  font-family: 'Roboto', sans-serif;
+  font-size: $s;
+  line-height: $h;
+  font-weight: $w;
+  text-align: left;
+  letter-spacing: 0;
+}
+

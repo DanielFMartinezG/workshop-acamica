@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worshop</title>
+  <link rel="stylesheet" href="../styles/css/styles.css">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- plantilla de tarjeta de administrador del evento -->
+  <div class="event-box" id="event-card-template">
+    <div class="envent-box-content">
+      <p class="event-box-date">15 may 2018</p>
+      <p class="event-box-title">Internet de las Cosas, tecnología empresarial.</p>
+      <p class="event-box-content event-organizer">Microsoft</p>
+      <p class="event-box-content event-platform">zoom</p>
+      <p class="event-box-content event-hour">10:00 a.m.</p>
+      <div class="event-box-description">
+        <img src="https://blog.aesdigital.es/wp-content/uploads/2018/06/internetcosasTW.png" 
+          alt="imagen del event" 
+          class="event-box-description-img show-box"
+        >
+        <div class="register-event-container">
+        </div>
+      </div>
+    </div>
+    <div class="event-participants-container">
+      HOLA
+    </div>
+    <div class="event-box-buttons">
+      <div class="event-button" id="close-register-button">Close</div>
+      <div class="event-button participants-button show-button" id="participants-button">Participantes</div>
+    </div>
+  </div>
+  <!-- cuerpo de la pagina -->
+  <section class="page-container">
+    <!-- encabezado de la sección -->
+    <header class="header-section">
+      <a href="../../index.html"><img src="../assets/logo.svg" class="logo-img"></a>
+      <a href="#"><img src="../assets/admin-img.svg" alt="botón de administrador" class="admin-btn-img"></a>
+    </header>
+    <!-- Seccion de eventos-->
+    <section class="events-section">
+      <!-- sección hero  -->
+      <div class="hero-container">
+        <h1 class="hero-container-title">LogIn As<span class="title-decoration">Events Admin</span></h1>
+      </div>
+      <!--contenedor de eventos-->
+      <div class="events-container" id="events-container"></div>
+    </section>
+    
+  </section>
+  <!-- <script src="./src/scripts/get_events.js"></script> -->
+</body>
+</html>

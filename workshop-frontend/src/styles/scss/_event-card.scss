@@ -1,0 +1,151 @@
+.event-box{
+  display: none;
+  // display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 25px auto;
+  border: solid 1px #edf0f2;
+  border-radius: 25px;
+  box-shadow: 5px 10px 18px #888888;
+  width: 300px;
+  height: 380px;
+  .envent-box-content{
+    position: absolute;
+    width: 100%;
+    .event-box-date{
+      @include montserrant-font(14px,18px,700);
+      color: #f1919d;
+      margin: 10px 15px 0 15px
+    }
+    .event-box-title{
+      @include montserrant-font(16px,20px,700);
+      margin: 5px 15px 5px 15px;
+    }
+    .event-box-content{
+      @include roboto-font(12px,15px,400);
+      color: #888888;
+      margin: 0px 5px 0 15px;
+    }
+    .event-box-description{
+      position: relative;
+      margin: auto;
+      margin-top: 5px;
+      width: 100%;
+      height: 200px;
+      .event-box-description-img{
+        display: none;
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        object-fit:fill;
+      }
+      .event-box-description-text{
+        display: none;
+        position: absolute;
+        background-color: rgb(241, 145, 157, 0.65);
+        width: inherit;
+        height: inherit;
+        justify-content: center;
+        align-items: center;
+        .event-description-text{
+          margin: 20px;
+        }
+      }
+      .register-event-container{
+        display: none;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: inherit;
+        height: inherit;
+        background-color: #f1919d;
+        .register-form{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          @include montserrant-font(14px,18px,700);
+          .register-item{
+            text-align: center;
+            line-height: 20px;
+            @include montserrant-font(14px,18px,500);
+            text-align: center;
+            width: 200px;
+            border-radius: 10px;
+          }
+          .bttn-register{
+            margin: 13px auto;
+            border: solid #f1919d;
+            border-radius: 50px;
+            width: 100px;
+            @include montserrant-font(14px,20px,800);
+            color: #f1919d;
+            text-align: center;
+            cursor: pointer;
+            &:active{
+              color: #FFFF;
+              background-color: #f1919d;
+            }
+          }
+        }
+      }
+      .show-box{
+        display: flex;
+      }
+      &:hover{
+        .event-box-description-text{
+          display: flex;
+        }
+      }
+    }
+  }
+  .event-participants-container{
+    // display: none;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: absolute;
+    width: 300px;
+    height: 328px;
+    background-color: #f1919d;
+    z-index: 1;
+    .participants-container{
+      margin: auto;
+      margin-top: 20px;
+      width: 250px;
+      height: 280px;
+      background-color: #edf0f2;
+      overflow-y: scroll;
+      .participant-box{
+        .participant-info{
+          
+        }
+      }
+    }
+  }
+  .event-box-buttons{
+    margin-bottom: 5px;
+    position: absolute;
+    bottom: 0;
+    .event-button{
+      display: none;
+      margin: 5px auto;
+      border: solid #f1919d;
+      border-radius: 50px;
+      width: 100px;
+      @include montserrant-font(14px,30px,800);
+      color: #f1919d;
+      text-align: center;
+      cursor: pointer;
+      &:active{
+        color: #FFFF;
+        background-color: #f1919d;
+      }
+    }
+    .participants-button{
+      width: 120px;
+    }
+    .show-button{
+      display: block;
+    }
+  }
+}
