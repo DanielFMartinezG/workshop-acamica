@@ -1,8 +1,7 @@
 class Event {
-  constructor(event_id,join_button_id, participants_button_id,close_button_id,register_form_id){
+  constructor(event_id,join_button_id,close_button_id,register_form_id){
     this.event_id = event_id;
     this.join_button_id= join_button_id;
-    this.participants_button_id = participants_button_id,
     this.close_button_id=close_button_id;
     this.register_form_id=register_form_id;
   }
@@ -62,9 +61,6 @@ const app_event_card = (event)=>{
   let event_join_button = document.querySelectorAll(`div#${event_id} > div.event-box-buttons > div#join-button`);
   event_join_button[0].id = `join-bttn-event-${event.id}`;
   event_join_button[0].addEventListener("click", joinParticipant);
-  //boton de participantes
-  let event_part_button = document.querySelectorAll(`div#${event_id} > div.event-box-buttons >  div#participants-button`);
-  event_part_button[0].id = `participants-bttn-event-${event.id}`;
   //boton de cerrar menu de registro
   let close_reg_button = document.querySelectorAll(`div#${event_id} > div.event-box-buttons >  div#close-register-button`);
   close_reg_button[0].id = `close-bttn-event-${event.id}`;
@@ -84,7 +80,6 @@ const app_event_card = (event)=>{
   (
     event_id,
     event_join_button[0].id,
-    event_part_button[0].id,
     close_reg_button[0].id, 
     event_reg_form[0].id
   );

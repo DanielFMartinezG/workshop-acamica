@@ -1,0 +1,52 @@
+.event-constainer{
+  .event-img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+  .event-title{
+    margin: 15px;
+    @include montserrant-font(24px,25px,700);
+  }
+  .event-date{
+    margin: 5px 15px 5px 15px;
+    @include montserrant-font(16px,20px,700);
+    color: #f1919d;
+  }
+  .event-description{
+    margin: 0 15px 5px 15px;
+    @include roboto-font(16px,20px,300);
+  }
+  .event-participants-button{
+    margin: 13px auto;
+    border: solid #f1919d;
+    border-radius: 50px;
+    height: 30px;
+    width: 150px;
+    @include montserrant-font(14px,25px,800);
+    color: #f1919d;
+    text-align: center;
+    cursor: pointer;
+    &:active{
+      color: #FFFF;
+      background-color: #f1919d;
+    }
+  }
+}
+.participants-container{
+  display: none;
+  .participants-title{
+    margin-top: 15px;
+    @include montserrant-font(24px,25px,500);
+    text-align: center;
+    color: #f1919d;
+  }
+  .participants-card{
+    margin: 10px auto;
+    padding: 15px;
+    border: solid #f1919d;
+    border-radius: 25px;
+    width: 280px;
+    @include roboto-font(16px,20px,300);
+  }
+}
