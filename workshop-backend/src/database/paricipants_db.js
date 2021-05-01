@@ -1,7 +1,7 @@
 let participants = [
   {
     id: 1,
-    user_admin: "daniel el admin",
+    user_admin: "daniel_martinez",
     user_password: "daniel123",
     participants: [
       {    
@@ -22,6 +22,8 @@ let participants = [
   },
   {
     id: 2,
+    user_admin: "aleja_henao",
+    user_password: "aleja123",
     participants: [
       {    
         id: 1,
@@ -41,6 +43,8 @@ let participants = [
   },
   {
     id: 3,
+    user_admin: "brigite_romero",
+    user_password: "brigite123",
     participants: [
       {    
         id: 1,
@@ -53,6 +57,8 @@ let participants = [
   },
   {
     id:4,
+    user_admin: "el_admin",
+    user_password: "el_admin123",
     participants: [
       {    
         id: 1,

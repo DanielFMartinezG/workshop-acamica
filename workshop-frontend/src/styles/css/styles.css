@@ -168,6 +168,7 @@
   display: flex;
 }
 .event-box .event-participants-container {
+  display: none;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   position: absolute;
