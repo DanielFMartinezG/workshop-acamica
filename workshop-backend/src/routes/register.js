@@ -13,4 +13,4 @@ router.post('/:idEvent',emailValidation, (req,res)=>{
   participants_db[index].participants.push(participant);
   return res.json({msg: "new register successful"});
 })
-module.exports = router; 
+module.exports = router;

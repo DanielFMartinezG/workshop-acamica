@@ -1,38 +1,38 @@
 let participants = [
   {
     id: 1,
-    user_admin: "daniel_martinez",
-    user_password: "daniel123",
-    participants: [
-      {    
+    admin_user: "daniel_martinez",
+    admin_password: "daniel123",
+    participants: {
+      1: {
         id: 1,
         name: "Cristian",
         lastName: "Hernandez",
         email: "c.hernandez@unibague.edu.co",
         city: "ibague"
       },
-      {    
+      2: {
         id: 2,
         name: "Eidth",
         lastName: "Martinez",
         email: "edith.m@uniestatal.edu.co",
         city: "medellin"
       }
-    ]
+    }
   },
   {
     id: 2,
-    user_admin: "aleja_henao",
-    user_password: "aleja123",
+    admin_user: "aleja_henao",
+    admin_password: "aleja123",
     participants: [
-      {    
+      {
         id: 1,
         name: "Ivan",
         lastName: "Guzman",
         email: "ivan.guzman@upb.edu.co",
         city: "ibague"
       },
-      {    
+      {
         id: 2,
         name: "Alejandra",
         lastName: "Marroquin",
@@ -43,31 +43,31 @@ let participants = [
   },
   {
     id: 3,
-    user_admin: "brigite_romero",
-    user_password: "brigite123",
+    admin_user: "brigite_romero",
+    admin_password: "brigite123",
     participants: [
-      {    
+      {
         id: 1,
-        name: "Daniel",
+        name: "Daniela",
         lastName: "Martinez",
-        email: "daniel.martinez@unibague.edu.com",
+        email: "daniela.martinez@unibague.edu.com",
         city: "ibague"
       }
     ]
   },
   {
     id:4,
-    user_admin: "el_admin",
-    user_password: "el_admin123",
+    admin_user: "el_admin",
+    admin_password: "el_admin123",
     participants: [
-      {    
+      {
         id: 1,
         name: "Mauricio",
         lastName: "Hernandez",
         email: "mauricio.h@uniandes.edu.com",
         city: "bogotá"
       },
-      {    
+      {
         id: 2,
         name: "Julio",
         lastName: "Barrero",
