@@ -1,6 +1,5 @@
 .event-box{
   display: none;
-  // display: flex;
   position: relative;
   justify-content: center;
   margin: 25px auto;
@@ -99,29 +98,6 @@
       }
     }
   }
-  .event-participants-container{
-    display: none;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    position: absolute;
-    width: 300px;
-    height: 328px;
-    background-color: #f1919d;
-    z-index: 1;
-    .participants-container{
-      margin: auto;
-      margin-top: 20px;
-      width: 250px;
-      height: 280px;
-      background-color: #edf0f2;
-      overflow-y: scroll;
-      .participant-box{
-        .participant-info{
-          
-        }
-      }
-    }
-  }
   .event-box-buttons{
     margin-bottom: 5px;
     position: absolute;
@@ -140,9 +116,6 @@
         color: #FFFF;
         background-color: #f1919d;
       }
-    }
-    .participants-button{
-      width: 120px;
     }
     .show-button{
       display: block;
