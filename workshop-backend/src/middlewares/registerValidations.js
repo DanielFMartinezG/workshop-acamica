@@ -10,9 +10,9 @@ const emailValidation=(req,res,next)=>{
   const include_yahoo = email.includes("@yahoo.com");
   //verificación de emails
   if(email_index != -1){
-    res.status(400).json({msg: "el email ya se encuentra registrado"})
+    return res.status(400).json({msg: "el email ya se encuentra registrado"})
   }else if(include_hotmail || include_gmail  || include_yahoo){
-    res.status(400).json({msg: "el email no puede ser hotmail, yahoo, ni gmail"})
+    return res.status(400).json({msg: "el email no puede ser hotmail, yahoo, ni gmail"})
   }
   next();
 }

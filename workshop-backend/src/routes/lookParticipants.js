@@ -7,18 +7,18 @@ const sign = config.sign;
 
 //obtenemos los participantes por evento
 
-router.get('/participants',(req,res)=>{
+router.get('/',(req,res)=>{
   let token = req.headers['authorization'];
   try {
-    var decoded = jwt.verify(token, sign);
+    const decoded = jwt.verify(token, sign);
+    const {admin_user} = decoded;
+    const event = participants_db.filter( admin => {
+      return admin.admin_user === admin_user
+    });
+    res.json({data:{id_event: event[0].id, participants: event[0].participants}});
   } catch (error) {
-      console.error("Error:",error.message)
+    res.json({Error: error.message})
   }
-  const {admin_user} = decoded;
-  const participants = participants_db.filter( admin => {
-    return admin.admin_user === admin_user
-  });
-  res.json({data: participants[0].participants});
 });
 
-module.exports = router;
+module.exports = router; 

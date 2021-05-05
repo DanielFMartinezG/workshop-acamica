@@ -19,7 +19,6 @@ fetch(url_events)
 .then(response => response.json())
 .then(events_response => {
   events_array = events_response.data;
-  console.log(events_array);
   events_response.data.forEach(element => {
     app_event_card(element);
   });

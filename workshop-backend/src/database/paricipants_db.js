@@ -3,22 +3,22 @@ let participants = [
     id: 1,
     admin_user: "daniel_martinez",
     admin_password: "daniel123",
-    participants: {
-      1: {
+    participants: [
+      {
         id: 1,
         name: "Cristian",
         lastName: "Hernandez",
         email: "c.hernandez@unibague.edu.co",
         city: "ibague"
       },
-      2: {
+      {
         id: 2,
         name: "Eidth",
         lastName: "Martinez",
         email: "edith.m@uniestatal.edu.co",
         city: "medellin"
       }
-    }
+    ]
   },
   {
     id: 2,
@@ -48,9 +48,9 @@ let participants = [
     participants: [
       {
         id: 1,
-        name: "Daniela",
+        name: "Fernanda",
         lastName: "Martinez",
-        email: "daniela.martinez@unibague.edu.com",
+        email: "daniela.mart@unibague.edu.com",
         city: "ibague"
       }
     ]
